@@ -1,0 +1,18 @@
+body {
+	font-family: 'Delius Unicase', cursive;
+}
+
+.container {
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+
+i.fa.fa-times {
+    cursor: pointer;
+    color: darkgray;
+}
+
+i.fa.fa-times:hover {
+    color: black;
+}
