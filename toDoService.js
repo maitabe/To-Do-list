@@ -1,18 +1,30 @@
 
-// app.factory('toDoService', function() {
-
-// 	//the service store my data
-// 	var toDo = [{name:"12"},{name:"123"}];
-
-// 	return toDo;
-
-// });
-
 app.factory('toDoService', function(){
 
 	//the service store my data
 
-  var arrTodo = ["Keerolepa", "Elzenon", "Jultana", "Chintma", "Bss"];
+  var arrTodo = [
+  	{
+  	  name:"Keerolepa",
+  	  isActive:false
+  	},
+  	{
+  	  name:"Elzenon",
+  	  isActive:false
+  	},
+  	{
+  	  name:"Jultana",
+  	  isActive:false
+  	},
+  	{
+  	  name:"Chintma",
+  	  isActive:false
+  	},
+  	{
+  	  name:"Bss",
+  	  isActive:false
+  	}
+  ];
 
   return {arrTodo:arrTodo};
 

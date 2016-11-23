@@ -16,10 +16,13 @@
 
 		<div>
 			<ul>
-				<li ng-repeat="toDo in newToDoList track by $index"> {{ toDo }} <i class="fa fa-times" aria-hidden="true" ng-click="remove($index)"></i></li>
+				<li class="" ng-repeat="toDo in newToDoList track by $index" ng-class="{'mark':toDo.isActive}">
+					<input type="checkbox" name="" ng-click="checkDone()" > <!-- ng-model="toDo.isActive" -->
+					{{ toDo.name }}
+					<i class="fa fa-times" aria-hidden="true" ng-click="remove($index)"></i>
+				</li>
 			</ul>
 		</div>
-
 	</div>
 
 
@@ -28,6 +31,6 @@
 <script src="node_modules/angular/angular.min.js"></script>
 <script src="app.js"></script>
 <script src="toDoService.js"></script>
-<script src="addNewToDoCtrl.js"></script>
+<script src="toDoCtrl.js"></script>
 </body>
 </html>
